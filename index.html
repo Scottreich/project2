@@ -17,14 +17,17 @@
       <form id="user-input" class="well">
         <!--Question 1  -->
         <div class="form-group">
-          <label for="epicodus-exp">How many hours experience do you have coding? (to the nearest hour)</label>
-            <input id="epicodus-exp" class="form-control" type="text">
+          <label for="epicodus-exp">On a scale from 1-10 what is your experience level? (to the nearest hour)</label>
+            <input id="epicodus-exp" class="form-control" type="number" min="1" max="10">
         </div>
         <!--Question 2  -->
         <div class="form-group">
-          <label for="epicodus-timeOfDay">Are you a morning person?</label>
-            <input id="epicodus-timeOfDay" class="form-control" type="text">
-        </div>
+          <p>Are you a morning person?</p>
+            <select id="epicodus-timeOfDay" class="form-control">
+              <option value="5">Yes</option>
+              <option value="1">No</option>
+            </select>
+          </div>
         <!--Question 3  -->
         <div class="form-group"
           <label for="epicodus-available"><strong>How many days a week can you devote to writing new code?</ strong></label>
@@ -34,13 +37,13 @@
         <div class="form-group">
           <p>Why are you interested in Epicodus?</p>
             <select id="epicodus-interest" class="form-control">
-              <option value="2">I want to write better code.</option>
-              <option value="2">I want to network with other coders.</option>
-              <option value="2">I want to learn new skills for a career change.</option>
-              <option value="2">I want create new things!</option>
-              <option value="2">I don't know</option>
-              <option value="2">I want to design Websites</option>
-              <option value="1">I'm looking for something easy to learn...</option>
+              <option value="9">I want to write better code.</option>
+              <option value="8">I want to network with other coders.</option>
+              <option value="7">I want to learn new skills for a career change.</option>
+              <option value="6">I want create new things!</option>
+              <option value="5">I don't know</option>
+              <option value="4">I want to design Websites</option>
+              <option value="3">I'm looking for something easy to learn...</option>
             </select>
           </div>
           <!--Question 5  -->
