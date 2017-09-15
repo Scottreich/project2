@@ -9,14 +9,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"
 </head>
+<!--HTML  -->
 <body>
   <div class="container">
     <h1>Which Epidcodus Path is correct for you?</h1>
-      <form>
+    <!--Form start  -->
+      <form class="well">
         <div class="form-group">
-          <label for="code-exp">How many hours do you have coding? (to the nearest hour)</label>
-          <input required id="code-exp" class="form-control" type="text">
+          <label for="code-exp">How many hours experience do you have coding? (to the nearest hour)</label>
+            <input required id="code-exp" class="form-control" type="text">
         </div>
+        <div class="form-group">
+          <label for="morning-person">Are you a morning person?</label>
+            <input required id="morning-person" class="form-control" type="text">
+        </div>
+        <div class="form-group"
+          <label for="time-available"><strong>How many days a week can you devote to writing new code?</ strong></label>
+            <input required id="time-available" type="number" name="quantity" min="1" max="7">
+        </div>
+
   </div>
 </body>
 </html>
