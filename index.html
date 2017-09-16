@@ -4,7 +4,7 @@
   <title>Epicodus Path Quiz</title>
   <!--JS Scripts  -->
     <script src="js/jquery-3.2.1.js"></script>
-    <script src+"js/script.js"></script>
+    <script src="js/script.js"></script>
   <!--Css Styles  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"
@@ -18,34 +18,23 @@
         <!--Question 1  -->
         <div class="form-group">
           <label for="epicodus-exp">On a scale from 1-10 what is your experience level? (to the nearest hour)</label>
-            <input id="epicodus-exp" class="form-control" type="number" min="1" max="10">
+            <input id="epicodus-exp" class="form-control" type="number" name="quantity" min="1" max="10">
         </div>
         <!--Question 2  -->
-        <div class="form-group">
-          <p>Are you a morning person?</p>
-            <select id="epicodus-timeOfDay" class="form-control">
-              <option value="5">Yes</option>
-              <option value="1">No</option>
-            </select>
-          </div>
+        <div class="form-group"
+          <label for="epicodus-hours"><strong>How many hours a day can you commit to writing code?</ strong></label>
+            <input id="epicodus-hours" class="form-control" type="number" name="quantity" min="1" max="24">
+        </div>
         <!--Question 3  -->
         <div class="form-group"
           <label for="epicodus-available"><strong>How many days a week can you devote to writing new code?</ strong></label>
             <input id="epicodus-available" class="form-control" type="number" name="quantity" min="1" max="7">
         </div>
         <!--Question 4  -->
-        <div class="form-group">
-          <p>Why are you interested in Epicodus?</p>
-            <select id="epicodus-interest" class="form-control">
-              <option value="9">I want to write better code.</option>
-              <option value="8">I want to network with other coders.</option>
-              <option value="7">I want to learn new skills for a career change.</option>
-              <option value="6">I want create new things!</option>
-              <option value="5">I don't know</option>
-              <option value="4">I want to design Websites</option>
-              <option value="3">I'm looking for something easy to learn...</option>
-            </select>
-          </div>
+        <div class="form-group"
+          <label for="epicodus-age"><strong>How old are you?</ strong></label>
+            <input id="epicodus-age" class="form-control" type="number" name="quantity" min="1" max="100">
+        </div>
           <!--Question 5  -->
         <div class="form-group">
           <p>When would you like to start learning?</p>
@@ -59,7 +48,9 @@
         </div>
         <div class="form-group">
           <div class="well">
-            <h1 id="output">You should check out</h1>
+            <h1 id="output1">You should check out <span id="span1"></span></h1>
+            <h1 id="output2">You should check out <span id="span2"></span></h1>
+            <h1 id="output3">You should check out <span id="span3"></span></h1>
           </div>
         </div>
       </form>
