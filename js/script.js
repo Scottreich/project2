@@ -4,7 +4,7 @@ $(document).ready(function() {
       event.preventDefault();
     var experience = $("#epicodus-exp").val();
     alert(experience);
-    var timeOfDayLength = $("#epidcodus-hours").val();
+    var timeOfDayLength = $("#epicodus-hours").val();
     alert(timeOfDayLength);
     var daysAvailable = $("#epicodus-available").val();
     alert(daysAvailable);
