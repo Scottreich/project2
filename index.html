@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css"
 </head>
 <!--HTML  -->
-<body>
-  <div class="container">
-    <h1>Which Epidcodus Path is correct for you?</h1>
-    <!--Form start  -->
+  <body>
+    <div class="container">
+      <h1>Which Epidcodus Path is correct for you?</h1>
+      <!--Form start  -->
       <form id="user-input" class="well">
         <!--Question 1  -->
         <div class="form-group">
@@ -37,24 +37,25 @@
         </div>
           <!--Question 5  -->
         <div class="form-group">
-          <p>When would you like to start learning?</p>
-          <label for="Today">Today</label>
-            <input type="radio" name="start-day" id="epicodus-today" value="Today"<br>
-          <label for="next-year">Next Year</label>
-            <input type="radio" name="start-day" id="epicodus-tomorrow" value="next-year" checked>
+          <label for="">Start day</label>
+         <select id="epicodus-start">
+           <option value="female">Today</option>
+           <option value="male">Next year</option>
+         </select>
         </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <button type="reset" class="btn btn-danger">Reset</button>
-        </div>
-        <div class="form-group">
-          <div class="well">
-            <h1 id="output1">You should check out <span id="span1"></span></h1>
-            <h1 id="output2">You should check out <span id="span2"></span></h1>
-            <h1 id="output3">You should check out <span id="span3"></span></h1>
-          </div>
-        </div>
+        <br></br>
+        <button type="submit" class="btn btn-danger">Submit</button>
       </form>
-  </div>
-</body>
+      <br></br>
+        <div id="trackOne" class="hideTracks">
+          <p>C#/.NET</p>
+        </div>
+        <div id="trackTwo" class="hideTracks">
+          <p>Java/Android </p>
+        </div>
+        <div id="trackThree" class="hideTracks">
+          <p>CSS/Design</p>
+        </div>
+    </div>
+  </body>
 </html>
